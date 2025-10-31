@@ -1,11 +1,143 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ultra-Dent</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <header class="header">
+      <a class="header__logo" href="#">
+        <img src="/src/img/Logo.png" alt="logo" />
+      </a>
+      <button class="header__burger" aria-label="Открыть меню">
+        <svg
+          width="36"
+          height="36"
+          viewBox="0 0 36 36"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g clip-path="url(#clip0_27_824)">
+            <path
+              d="M27 19.5H9C8.175 19.5 7.5 18.825 7.5 18C7.5 17.175 8.175 16.5 9 16.5H27C27.825 16.5 28.5 17.175 28.5 18C28.5 18.825 27.825 19.5 27 19.5ZM30 25.5H12C11.175 25.5 10.5 24.825 10.5 24C10.5 23.175 11.175 22.5 12 22.5H30C30.825 22.5 31.5 23.175 31.5 24C31.5 24.825 30.825 25.5 30 25.5ZM25.5 12C25.5 12.825 24.825 13.5 24 13.5H6C5.175 13.5 4.5 12.825 4.5 12C4.5 11.175 5.175 10.5 6 10.5H24C24.825 10.5 25.5 11.175 25.5 12Z"
+              fill="white"
+            />
+          </g>
+          <defs>
+            <clipPath id="clip0_27_824">
+              <rect
+                width="36"
+                height="36"
+                fill="white"
+                transform="matrix(-1 0 0 1 36 0)"
+              />
+            </clipPath>
+          </defs>
+        </svg>
+      </button>
+
+      <div class="header__mode">
+        <div class="mode__svg">
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M10 0C4.5 0 0 4.5 0 10C0 15.5 4.5 20 10 20C15.5 20 20 15.5 20 10C20 4.5 15.5 0 10 0ZM14.2 14.2L9 11V5H10.5V10.2L15 12.9L14.2 14.2Z"
+              fill="#686868"
+            />
+          </svg>
+        </div>
+        <div class="mode__info">
+          <div class="mode__title">Время работы:</div>
+          <div class="mode__time">Ежедневно с 9:00 до 20:00</div>
+        </div>
+      </div>
+
+      <nav class="header__menu">
+        <ul class="menu menu--mobile">
+          <li class="menu__item"><a href="">Почему мы</a></li>
+          <li class="menu__item"><a href="">Где всё происходит</a></li>
+          <li class="menu__item"><a href="">Как это работает</a></li>
+          <li class="menu__item"><a href="">Отзывы</a></li>
+          <li class="menu__item"><a href="">О нас</a></li>
+          <li class="menu__item"><a href="">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <button class="header__button">Оставить заявку</button>
+    </header>
+
+    <!--Блок с таймером и акцией-->
+    <section class="promo">
+      <div class="container">
+        <aside class="promo__alert" aria-label="Информация об акции">
+          <p class="promo__text">Всего 35 купонов со скидкой до конца недели</p>
+
+          <div class="promo__timer">
+            <h2 class="promo__timer-title">До конца акции осталось:</h2>
+            <div class="timer">
+              <div class="timer__item">
+                <span class="timer__value">5</span>
+                <span class="timer__label">дни</span>
+              </div>
+              <div class="separator">:</div>
+              <div class="timer__item">
+                <span class="timer__value">02</span>
+                <span class="timer__label">часов</span>
+              </div>
+              <div class="separator">:</div>
+              <div class="timer__item">
+                <span class="timer__value">29</span>
+                <span class="timer__label">минут</span>
+              </div>
+              <div class="separator">:</div>
+              <div class="timer__item">
+                <span class="timer__value">46</span>
+                <span class="timer__label">секунд</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="promo__counter">
+            <span class="counter__text">Купонов осталось: 8 из 35</span>
+          </div>
+        </aside>
+
+        <article class="promo__content">
+          <div class="promo__dignity">Раз и навсегда</div>
+          <div class="promo__title">Восстановим утраченные зубы</div>
+          <span class="promo__highlight">за 1 день</span>
+
+          <div class="promo__description">
+            С помощью <span>премиальных имплантов</span> и цифровых технологий
+            после удаления зубов, парадонтита или натирающих паротезов
+          </div>
+          <footer class="promo__footer">
+            <button class="promo_button">
+              Оставить заявку
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M18.1237 13.3333C17.377 13.3333 16.7904 12.7333 16.7904 12V4.54667L2.27036 19.0667C1.75036 19.5867 0.910364 19.5867 0.390366 19.0667C-0.129635 18.5467 -0.129635 17.7067 0.390366 17.1867L14.9104 2.66667H7.45703C6.7237 2.66667 6.1237 2.06667 6.1237 1.33333C6.1237 0.6 6.7237 0 7.45703 0H18.1237C18.857 0 19.457 0.6 19.457 1.33333V12C19.457 12.7333 18.857 13.3333 18.1237 13.3333Z"
+                  fill="#222222"
+                />
+              </svg>
+            </button>
+          </footer>
+        </article>
+      </div>
+    </section>
+
+    <script src="/src/scripts/main.js"></script>
+  </body>
 </html>

@@ -1,0 +1,247 @@
+@media screen and (min-width:375px) {
+    .promo {
+    background-position-y: 113%;
+    }
+
+    .promo__highlight {
+    right: 57px;
+    }
+
+    .promo_button {
+    width: 100%;
+    }
+}
+
+@media screen and (min-width:388px) {
+    .promo {
+        background-position-y: 104%;
+    }
+}
+
+@media screen and (min-width:395px) {
+    .promo {
+        background-position-y: 100%;
+    }
+}
+
+@media screen and (min-width:400px) {
+    .promo {
+        background-position-y: 97%;
+    }
+}
+
+@media screen and (min-width:425px) {
+     .promo {
+    background-position-y: 98%;
+    }
+}
+
+@media screen and (min-width:430px) {
+    .promo {
+        background-position-y: 93%;
+    }
+}
+
+@media screen and (min-width:445px) {
+    .promo {
+        background-position-y: 90%;
+    }
+
+    .promo__title {
+        width: 356px;
+    }
+
+    .promo__highlight {
+    right: 97px;
+    }
+}
+
+@media screen and (min-width:445px) {
+    .promo {
+        background-position-y: 87%;
+    }
+}
+
+@media screen and (min-width:470px) {
+    .promo {
+        background-position-y: 83%;
+    }
+
+    .promo__highlight {
+        right: 27%;
+    }
+}
+
+@media screen and (min-width:495px) {
+    .promo {
+        background-position-y: 80%;
+    }
+}
+
+@media screen and (min-width:495px) {
+    .promo {
+        background-position-y: 78%;
+    }
+}
+
+@media screen and (min-width:535px) {
+    .promo {
+        background-position-y: 76%;
+    }
+
+    .promo__description {
+        padding-bottom: 4px;
+    }
+}
+
+@media screen and (min-width:560px) {
+    .promo {
+        background-position-y: 73%;
+    }
+}
+
+@media screen and (min-width:605px) {
+    .promo {
+        background-position-y: 72%;
+    }
+}
+
+@media screen and (min-width:625px) {
+    .promo {
+        background-position-y: 71%;
+    }
+
+    .promo__description {
+    bottom: -15px;
+    }
+
+    .promo__footer {
+    bottom: -31%;
+    }
+}
+
+@media screen and (min-width:650px) {
+    .promo {
+        background-position-y: 70%;
+    }
+}
+
+@media screen and (min-width:675px) {
+    .promo {
+        background-position-y: 69%;
+    }
+    
+    .promo__description {
+    bottom: -40px;
+    padding-bottom: 8px;
+    }
+
+    .promo__footer {
+    bottom: -40%;
+    }
+}
+
+@media screen and (min-width:700px) {
+    .header {
+        grid-template-columns: 162px 345px 79px;
+    }
+
+    .header__button {
+        grid-column: 2 / 3;
+        grid-row: 1;
+    }
+    
+    .promo {
+        background-image: url('/src/img/main-img.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .promo__content {
+    margin-top: 10px;
+    }
+
+    .promo__description {
+        bottom: -60px;
+        font-size: 14px;
+    }
+
+    .promo__footer {
+        top: 0;
+        width: 200px;
+    }
+
+    .promo_button{
+        font-size: 17px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .promo__alert {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, auto);
+    }
+
+    .promo__timer {
+        display: flex;
+        gap:32px;
+    }
+
+    .promo__text {
+        grid-column: 1 / 3
+    }
+
+    .promo__description {
+        bottom: 5%;
+        left: 74%;
+        width: 200px;
+        transform: translateY(-50%);
+    }
+}
+
+@media screen and (min-width:900px) {
+    .header {
+        grid-template-columns: 162px 250px 198px 79px;
+        grid-template-rows: auto;
+        gap: 0;
+        align-items: center;
+    }
+
+    .header__burger {
+        grid-column: 4 / 4;
+    }
+    
+    .header__mode {
+        grid-column: 2 / 3;
+        grid-row: 1;
+        display: grid;
+        grid-template-columns: auto auto;
+        align-items: center;
+    }
+
+    .mode__svg {
+        margin: 0 auto;
+    }
+
+    .header__button {
+        grid-column: 3 / 4;
+    }
+
+    .promo__alert {
+        grid-template-columns: repeat(2, auto);
+        align-items: center;
+    }
+
+    .promo__timer {
+        align-items: center;
+    }
+
+    .promo__footer {
+        width: 282px;
+    }
+
+    .promo_button{
+        font-size: 22px;
+    }
+}
