@@ -34,6 +34,7 @@ body {
     gap: 15px;
     justify-content: space-between;
     padding: 16px 12px 16px 15px;
+    position: relative;
 }
 
 .header__burger {
@@ -42,24 +43,102 @@ body {
     justify-content: center;
     width: 79px;
     height: 40px;
-    background: var(--bg-button);
+    background: #FF7700; /* использовать var */
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.header__menu {
+    display: none;
+    position: fixed;
+    top: 6%;
+    right: 5%;
+    width: 300px;
+    height: 580px;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--text-color-button);
+    box-shadow: 0px 15px 60px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    font-family: InterSemiBold;
+    color: var(--text-color-menu);
+    z-index: 101;
+}
+
+.header__menu.active {
+    display: flex;
+}
+
+.close {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 79px;
+    padding: 7px 30px;
+    background: #FF7700;
     border-radius: 8px;
     border: none;
     cursor: pointer;
 }
 
-.menu.menu--mobile {
-    display: none;
-    justify-content: flex-start;
-    align-items: center;
+.close svg {
+    width: 20px;
+    height: 20px;
+}
+
+.menu {
+    display: flex;
     flex-direction: column;
-    font-family: InterSemiBold;
-    color: var(--text-color-menu);
+    justify-content: center;
+    gap: 16px;
+    margin-top: 8px;
 }
 
 .menu__item {
+    list-style: none;
+    text-align: center;
+}
+
+.menu__item a {
+    text-decoration: none;
+    font-family: InterSemiBold;
     font-size: 20px;
     line-height: 24px;
+    color: var(--text-color-menu);
+}
+
+.header__mode {
+    position: fixed;
+    bottom: 55%;
+    left: 60%;
+    transform: translateX(-50%);
+    display: none;
+    margin-top: auto;
+    padding: 20px;
+    width: 100%;
+    z-index: 101;
+}
+
+.mode__info {
+    color: var(--text-color-menu);
+}
+
+.mode__title {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.mode__time {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+.menu__item {
+    font-size: 20px;
     line-height: 24px;
     text-decoration: none;
 }
@@ -70,7 +149,23 @@ body {
     height: 40px;
     padding: 6px 32px;
     margin: 0 auto;
-    background: var(--bg-button);
+    background: #FF7700; /* Использовать var */
+    border-radius: 8px;
+    border: none;
+    font-family: InterSemiBold;
+    color: var(--text-color-button);
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.header__btn {
+    position: absolute;
+    bottom: 8px;
+    width: 95%;
+    height: 40px;
+    margin: 0 auto;
+    padding: 6px 32px;
+    background: #FF7700; /* Использовать var */
     border-radius: 8px;
     border: none;
     font-family: InterSemiBold;
@@ -83,9 +178,14 @@ body {
     background-color: var(--bg-button-hover);
 }
 
+body.no-scroll {
+    overflow: hidden;
+}
+
 /*Блок с таймером и акцией*/
 .container {
     padding: 0 16px;
+    margin: 0 auto;
 }
 
 .promo {
@@ -269,3 +369,349 @@ left: 0;
     background-color: var(--bg-button);
     border-radius: 8px;
 }
+
+/*Блок с преимуществами и наградами*/
+.advantages {
+    position: relative;
+    height: 400px;
+}
+ 
+.advantages__item {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px;
+    background-color: var(--text-color-button);
+    box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+}
+
+.advantages__item:first-child {
+    position: absolute;
+    top: -13%;
+    left: 2%;
+}
+
+.advantages__item:nth-child(2) {
+    position: absolute;
+    top: 22%;
+    left: 2%;
+}
+
+ .advantages__item:nth-child(3) {
+    position: absolute;
+    top: 57%;
+    left: 2%;
+} 
+
+.advantages__img {
+    position: relative;
+}
+
+.advantages__cup {
+    position: absolute;
+    top: -26%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.advantages_pd {
+    position: absolute;
+    top: -20%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.advantages__2gis {
+    position: absolute;
+    left: -18%;
+    top: 0;
+    z-index: 2;
+}
+
+.advantages__map {
+    position: absolute;
+    right: -8%;
+    top: -24%;
+}
+
+/*Блок с причинами посещения*/
+.reasons {
+    margin-bottom: 50px;
+}
+
+.reasons .container {
+    width: 288px;
+    overflow: hidden; 
+}
+
+.reasons__title {
+font-family: InterSemiBold;
+font-size: 25px;
+text-align: center;
+color: var(--bg-button);
+margin-bottom: 32px;
+}
+
+.reasons__items {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.5s ease-in-out; 
+}
+
+.reasons__item {
+    box-sizing: border-box;
+    flex: 0 0 288px;
+    padding: 16px;
+    border: 1px solid #ff7700b3;
+    border-radius: 40px;
+}
+
+.reasons__number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 29px;
+    background: #FB9A49;
+    border-radius: 16px;
+    font-family: InterSemiBold;
+    font-size: 24px;
+    color: var(--text-color-button);
+    margin-bottom: 12px;
+}
+
+.reasons__text {
+    font-family: InterSemiBold;
+    font-size: 24px;
+    line-height: 29px;
+    color: var(--text-color-main);
+    margin-bottom: 32px;
+}
+
+.reasons__img img {
+    width: 100%;
+}
+
+.slider__btn {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 32px;
+}
+
+.prev, .next {
+width: 24px;
+height: 24px;
+border: none;
+cursor: pointer;
+}
+
+.prev svg, .next svg {
+    fill-opacity: 0.15;
+}
+
+.controls {
+font-family: InterRegular;
+font-size: 18px;
+line-height: 22px;
+color: var(--text-color-main);
+}
+
+.controls ul {
+    display: flex;
+    list-style: none;
+}
+
+.controls ul li {
+    padding: 8px;
+}
+
+.prev svg:hover, .next svg:hover {
+    fill-opacity: 1;
+}
+
+
+/* Отзывы */
+.reviews {
+    margin: 50px 0;
+}
+
+.reviews .container {
+    width: 288px;
+    overflow: hidden; 
+}
+
+.reviews__title {
+font-family: InterBold;
+font-size: 42px;
+text-align: center;
+color: #FF7700; /* использовать var */
+margin-bottom: 32px;
+}
+
+.reviews__items {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.5s ease-in-out; 
+}
+
+.review-card {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+box-sizing: border-box;
+flex: 0 0 288px;
+padding: 32px;
+gap: 32px;
+background: var(--text-color-button);
+border: 1px solid #FF7700; /* использовать var */
+border-radius: 40px;
+}
+
+.review-card__author {
+font-family: InterSemiBold;
+font-size: 32px;
+color: #2F6BEA;
+}
+
+.review-card__rating {
+    display: flex;
+    flex-direction: column;
+}
+
+.review-card__date {
+font-family: InterSemiBold;
+font-size: 22px;
+color: #B5B5B5;
+}
+
+.review-card__stars {
+display: flex;
+align-items: center;
+gap: 10px;
+font-size: 40px;
+color: #FECE0F;
+}
+
+.review-card__text {
+font-family: InterRegular;
+font-size: 18px;
+line-height: 22px;
+color: var(--text-color-main);
+}
+
+.review-slider__btn {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 32px;
+}
+
+.review-prev, .review-next {
+width: 24px;
+height: 24px;
+border: none;
+cursor: pointer;
+}
+
+.review-prev svg, .review-next svg {
+    fill-opacity: 0.15;
+}
+
+.review-controls {
+font-family: InterRegular;
+font-size: 18px;
+line-height: 22px;
+color: var(--text-color-main);
+}
+
+.review-controls ul {
+    display: flex;
+    list-style: none;
+}
+
+.review-controls ul li {
+    padding: 8px;
+}
+
+.review-prev svg:hover, .review-next svg:hover {
+    fill-opacity: 1;
+}
+
+/* Блок с акцией и скидкой */
+.promotion {
+    margin: 50px 0;
+}
+
+.promotion__info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: #ff770026;
+    border-radius: 40px;
+}
+
+.promotion__action {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+padding: 20px 20px;
+
+}
+
+.promotion__title {
+font-family: InterExtraBold;
+font-size: 27px;
+color: #686868;
+}
+
+.promotion__text, .promotion__plus {
+font-family: InterMedium;
+font-size: 27px;
+line-height: 30px;
+color: #686868;
+}
+
+.promotion__img {
+    margin-top: -40px;
+}
+
+.promotion__img img {
+    width: 100%;
+}
+
+.promotion__button {
+    margin: 16px auto;
+}
+
+.promotion__btn {
+    width: 100%;
+    margin-top: 16px;
+    padding: 10px;
+    background: #FF7700;
+    border-radius: 40px;
+    border: none;
+    font-family: InterSemiBold;
+    font-size: 18px;
+    color: var(--text-color-button);
+}
+
+.promotion__coupon {
+    margin: 16px auto;
+font-family: InterRegular;
+font-size: 16px;
+text-align: center;
+color: #686868;
+}
+
+.promotion__coupon span {
+font-family: InterBold;
+font-size: 16px;
+color: #222222;
+}
+

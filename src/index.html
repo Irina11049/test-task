@@ -10,7 +10,7 @@
       <a class="header__logo" href="#">
         <img src="/src/img/Logo.png" alt="logo" />
       </a>
-      <button class="header__burger" aria-label="Открыть меню">
+      <button class="header__burger" id="burger" aria-label="Открыть меню">
         <svg
           width="36"
           height="36"
@@ -37,6 +37,33 @@
         </svg>
       </button>
 
+      <button class="close" id="close-menu">
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 20 20"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M19.3387 0.45375C18.7537 -0.13125 17.8087 -0.13125 17.2237 0.45375L9.88875 7.77375L2.55375 0.43875C1.96875 -0.14625 1.02375 -0.14625 0.43875 0.43875C-0.14625 1.02375 -0.14625 1.96875 0.43875 2.55375L7.77375 9.88875L0.43875 17.2237C-0.14625 17.8087 -0.14625 18.7537 0.43875 19.3387C1.02375 19.9237 1.96875 19.9237 2.55375 19.3387L9.88875 12.0037L17.2237 19.3387C17.8087 19.9237 18.7537 19.9237 19.3387 19.3387C19.9237 18.7537 19.9237 17.8087 19.3387 17.2237L12.0037 9.88875L19.3387 2.55375C19.9087 1.98375 19.9087 1.02375 19.3387 0.45375Z"
+            fill="white"
+          />
+        </svg>
+      </button>
+
+      <nav class="header__menu" id="menu">
+        <ul class="menu menu--mobile">
+          <li class="menu__item"><a href="">Почему мы</a></li>
+          <li class="menu__item"><a href="">Где всё происходит</a></li>
+          <li class="menu__item"><a href="">Как это работает</a></li>
+          <li class="menu__item"><a href="">Отзывы</a></li>
+          <li class="menu__item"><a href="">О нас</a></li>
+          <li class="menu__item"><a href="">Контакты</a></li>
+        </ul>
+        <button class="header__btn">Оставить заявку</button>
+      </nav>
+
       <div class="header__mode">
         <div class="mode__svg">
           <svg
@@ -57,18 +84,6 @@
           <div class="mode__time">Ежедневно с 9:00 до 20:00</div>
         </div>
       </div>
-
-      <nav class="header__menu">
-        <ul class="menu menu--mobile">
-          <li class="menu__item"><a href="">Почему мы</a></li>
-          <li class="menu__item"><a href="">Где всё происходит</a></li>
-          <li class="menu__item"><a href="">Как это работает</a></li>
-          <li class="menu__item"><a href="">Отзывы</a></li>
-          <li class="menu__item"><a href="">О нас</a></li>
-          <li class="menu__item"><a href="">Контакты</a></li>
-        </ul>
-      </nav>
-
       <button class="header__button">Оставить заявку</button>
     </header>
 
@@ -135,6 +150,297 @@
             </button>
           </footer>
         </article>
+      </div>
+    </section>
+
+    <section class="advantages">
+      <div class="advantages__item">
+        <div class="advantages__img">
+          <img src="/src/img/advantages/img-advanages-1.png" alt="" />
+          <img
+            class="advantages__cup"
+            src="/src/img/advantages/stat-1.png"
+            alt=""
+          />
+        </div>
+        <div class="advantages__text">
+          Первая в России сеть стоматологий с сертификатом независимого
+          агентства экспертизы и консалтинга «Мед Эксперт Консалт»
+        </div>
+      </div>
+      <div class="advantages__item">
+        <div class="advantages__img">
+          <img src="/src/img/advantages/img-advanages-2.png" alt="" />
+          <img
+            class="advantages_pd"
+            src="/src/img/advantages/pd-2.png"
+            alt=""
+          />
+        </div>
+        <div class="advantages__text">
+          Трижды входим в ТОП-10 лучших частных стоматологий (2021, 2022, 2024)
+          в разных категориях и не собираемся останавливаться
+        </div>
+      </div>
+      <div class="advantages__item">
+        <div class="advantages__img">
+          <img src="/src/img/advantages/img-advanages-3.png" alt="" />
+          <img
+            class="advantages__2gis"
+            src="/src/img/advantages/2gis.png"
+            alt=""
+          />
+          <img
+            class="advantages__map"
+            src="/src/img/advantages/Yandex-3.png"
+            alt=""
+          />
+        </div>
+        <div class="advantages__text">
+          Наши пациенты определились с выбором лучшей стоматологии. Приходите,
+          мы поможем определиться и Вам
+        </div>
+      </div>
+    </section>
+
+    <section class="reasons">
+      <div class="container">
+        <h2 class="reasons__title">
+          3 веских причины сделать имплантацию уже сейчас
+        </h2>
+        <div class="reasons__items">
+          <div class="reasons__item">
+            <div class="reasons__number">1</div>
+            <div class="reasons__text">
+              Быстрое восстановление жевания и улыбки
+            </div>
+            <div class="reasons__img">
+              <img src="/src/img/advantage-img-1.png" alt="" />
+            </div>
+          </div>
+          <div class="reasons__item">
+            <div class="reasons__number">2</div>
+            <div class="reasons__text">
+              Уходят ограничения в еде и дискомфорт
+            </div>
+            <div class="reasons__img">
+              <img src="/src/img/advantage-img-1.png" alt="" />
+            </div>
+          </div>
+          <div class="reasons__item">
+            <div class="reasons__number">3</div>
+            <div class="reasons__text">
+              Никакой боли - точная и щадящая установка
+            </div>
+            <div class="reasons__img">
+              <img src="/src/img/advantage-img-3.png" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div class="slider__btn">
+          <button class="prev">
+            <svg
+              width="20"
+              height="14"
+              viewBox="0 0 20 14"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M7.2925 12.8825C7.6825 12.4925 7.6825 11.8625 7.2925 11.4725L3.4225 7.5825H18.5925C19.1425 7.5825 19.5925 7.1325 19.5925 6.5825C19.5925 6.0325 19.1425 5.5825 18.5925 5.5825H3.4225L7.3025 1.7025C7.6925 1.3125 7.6925 0.6825 7.3025 0.2925C6.9125 -0.0975 6.2825 -0.0975 5.8925 0.2925L0.2925 5.8825C-0.0975 6.2725 -0.0975 6.9025 0.2925 7.2925L5.8825 12.8825C6.2725 13.2625 6.9125 13.2625 7.2925 12.8825Z"
+                fill="#222222"
+              />
+            </svg>
+          </button>
+          <div class="controls">
+            <ul>
+              <li>1</li>
+              <li>2</li>
+              <li>3</li>
+            </ul>
+          </div>
+          <button class="next">
+            <svg
+              width="20"
+              height="14"
+              viewBox="0 0 20 14"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12.29 0.2925C11.9 0.6825 11.9 1.3125 12.29 1.7025L16.17 5.5825H1C0.45 5.5825 0 6.0325 0 6.5825C0 7.1325 0.45 7.5825 1 7.5825H16.18L12.3 11.4625C11.91 11.8525 11.91 12.4825 12.3 12.8725C12.69 13.2625 13.32 13.2625 13.71 12.8725L19.3 7.2825C19.69 6.8925 19.69 6.2625 19.3 5.8725L13.7 0.2925C13.32 -0.0975 12.68 -0.0975 12.29 0.2925Z"
+                fill="#222222"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews">
+      <div class="container">
+        <h2 class="reviews__title">Отзывы</h2>
+        <div class="reviews__items">
+          <article class="review-card">
+            <h3 class="review-card__author">Светлана, 36 лет</h3>
+            <div class="review-card__rating">
+              <time class="review-card__date" datetime="2026-04-12"
+                >12 Апреля 2026</time
+              >
+              <span class="review-card__stars">★★★★★</span>
+            </div>
+            <div class="review-card__body">
+              <blockquote class="review-card__text">
+                Я осталась очень довольна посещением этой стоматологической
+                клиники. Здесь чисто и уютно. Персонал вежливый и внимательный,
+                а врачи-профессионалы своего дела. Мне подробно объяснили план
+                лечения и ответили на все мои вопросы. Сама процедура прошла
+                безболезненно.
+              </blockquote>
+            </div>
+          </article>
+          <article class="review-card">
+            <h3 class="review-card__author">Игорь, 44 года</h3>
+            <div class="review-card__rating">
+              <time class="review-card__date" datetime="2026-04-12"
+                >12 Апреля 2026</time
+              >
+              <span class="review-card__stars">★★★★★</span>
+            </div>
+            <div class="review-card__body">
+              <blockquote class="review-card__text">
+                Я осталась очень довольна посещением этой стоматологической
+                клиники. Здесь чисто и уютно. Персонал вежливый и внимательный,
+                а врачи-профессионалы своего дела. Мне подробно объяснили план
+                лечения и ответили на все мои вопросы. Сама процедура прошла
+                безболезненно.
+              </blockquote>
+            </div>
+          </article>
+          <article class="review-card">
+            <h3 class="review-card__author">Станислав, 56 лет</h3>
+            <div class="review-card__rating">
+              <time class="review-card__date" datetime="2026-04-12"
+                >12 Апреля 2026</time
+              >
+              <span class="review-card__stars">★★★★★</span>
+            </div>
+            <div class="review-card__body">
+              <blockquote class="review-card__text">
+                Я осталась очень довольна посещением этой стоматологической
+                клиники. Здесь чисто и уютно. Персонал вежливый и внимательный,
+                а врачи-профессионалы своего дела. Мне подробно объяснили план
+                лечения и ответили на все мои вопросы. Сама процедура прошла
+                безболезненно.
+              </blockquote>
+            </div>
+          </article>
+          <article class="review-card">
+            <h3 class="review-card__author">Станислав, 56 лет</h3>
+            <div class="review-card__rating">
+              <time class="review-card__date" datetime="2026-04-12"
+                >12 Апреля 2026</time
+              >
+              <span class="review-card__stars">★★★★★</span>
+            </div>
+            <div class="review-card__body">
+              <blockquote class="review-card__text">
+                Я осталась очень довольна посещением этой стоматологической
+                клиники. Здесь чисто и уютно. Персонал вежливый и внимательный,
+                а врачи-профессионалы своего дела. Мне подробно объяснили план
+                лечения и ответили на все мои вопросы. Сама процедура прошла
+                безболезненно.
+              </blockquote>
+            </div>
+          </article>
+          <article class="review-card">
+            <h3 class="review-card__author">Станислав, 56 лет</h3>
+            <div class="review-card__rating">
+              <time class="review-card__date" datetime="2026-04-12"
+                >12 Апреля 2026</time
+              >
+              <span class="review-card__stars">★★★★★</span>
+            </div>
+            <div class="review-card__body">
+              <blockquote class="review-card__text">
+                Я осталась очень довольна посещением этой стоматологической
+                клиники. Здесь чисто и уютно. Персонал вежливый и внимательный,
+                а врачи-профессионалы своего дела. Мне подробно объяснили план
+                лечения и ответили на все мои вопросы. Сама процедура прошла
+                безболезненно.
+              </blockquote>
+            </div>
+          </article>
+        </div>
+
+        <div class="review-slider__btn">
+          <button class="review-prev">
+            <svg
+              width="20"
+              height="14"
+              viewBox="0 0 20 14"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M7.2925 12.8825C7.6825 12.4925 7.6825 11.8625 7.2925 11.4725L3.4225 7.5825H18.5925C19.1425 7.5825 19.5925 7.1325 19.5925 6.5825C19.5925 6.0325 19.1425 5.5825 18.5925 5.5825H3.4225L7.3025 1.7025C7.6925 1.3125 7.6925 0.6825 7.3025 0.2925C6.9125 -0.0975 6.2825 -0.0975 5.8925 0.2925L0.2925 5.8825C-0.0975 6.2725 -0.0975 6.9025 0.2925 7.2925L5.8825 12.8825C6.2725 13.2625 6.9125 13.2625 7.2925 12.8825Z"
+                fill="#222222"
+              />
+            </svg>
+          </button>
+          <div class="review-controls">
+            <ul>
+              <li class="">1</li>
+              <li class="">2</li>
+              <li class="">3</li>
+              <li class="">4</li>
+              <li class="">5</li>
+            </ul>
+          </div>
+          <button class="review-next">
+            <svg
+              width="20"
+              height="14"
+              viewBox="0 0 20 14"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12.29 0.2925C11.9 0.6825 11.9 1.3125 12.29 1.7025L16.17 5.5825H1C0.45 5.5825 0 6.0325 0 6.5825C0 7.1325 0.45 7.5825 1 7.5825H16.18L12.3 11.4625C11.91 11.8525 11.91 12.4825 12.3 12.8725C12.69 13.2625 13.32 13.2625 13.71 12.8725L19.3 7.2825C19.69 6.8925 19.69 6.2625 19.3 5.8725L13.7 0.2925C13.32 -0.0975 12.68 -0.0975 12.29 0.2925Z"
+                fill="#222222"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="promotion">
+      <div class="container">
+        <div class="promotion__info">
+          <div class="promotion__action">
+            <span class="promotion__title">Пройдите тест</span>
+            <div class="promotion__text">
+              и заберите купон со скидкой до 25%
+            </div>
+            <div class="promotion__plus">+</div>
+            <div class="promotion__text">
+              получите консультацию имплантолога
+            </div>
+            <div class="promotion__plus">+</div>
+            <div class="promotion__text">КТ-снимок в подарок</div>
+            <div class="promotion__button">
+              <button class="promotion__btn">Получи купон со скидкой</button>
+              <div class="promotion__coupon">
+                Купонов осталось: <span>8 из 35</span>
+              </div>
+            </div>
+          </div>
+          <div class="promotion__img">
+            <img src="/src/img/test-img.png" alt="" />
+          </div>
+        </div>
       </div>
     </section>
 
