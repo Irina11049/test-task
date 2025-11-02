@@ -13,6 +13,31 @@
     src: url('/src/fonts/Inter-Regular.otf');
 }
 
+@font-face {
+    font-family: InterBold;
+    src: url('/src/fonts/Inter-Bold.otf');
+}
+
+@font-face {
+    font-family: InterItalic;
+    src: url('/src/fonts/Inter-Italic.otf');
+}
+
+@font-face {
+    font-family: InterLight;
+    src: url('/src/fonts/Inter-Light.otf');
+}
+
+@font-face {
+    font-family: InterExtraBold;
+    src: url('/src/fonts/Inter-ExtraBold.otf');
+}
+
+@font-face {
+    font-family: InterMedium;
+    src: url('/src/fonts/Inter-Medium.otf');
+}
+
 :root {
     --main-bg-color: #F0F2F4;
     --bg-button: #E46A00;
@@ -26,15 +51,30 @@ body {
     background-color: var(--main-bg-color);
 }
 
+.container {
+    padding: 0 16px;
+    margin: 0 auto;
+}
+
 /*Header*/
 .header {
+    padding: 16px 0;
+}
+
+.header .container {
     display: grid;
-    grid-template-columns: 140px 79px;
-    grid-template-rows: 40px; 
-    gap: 15px;
+    grid-template-columns: 140px 80px;
+    grid-template-rows: 40px 40px; 
     justify-content: space-between;
-    padding: 16px 12px 16px 15px;
+    padding: 0 16px;
     position: relative;
+}
+
+.header__buttons {
+    display: grid;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    gap: 16px;
 }
 
 .header__burger {
@@ -48,6 +88,21 @@ body {
     border: none;
     cursor: pointer;
     z-index: 100;
+}
+
+.header__button {
+    width: 295px;
+    height: 40px;
+    padding: 6px 32px;
+    margin: 0 auto;
+    margin-left: -73%;
+    background: #FF7700; /* Использовать var */
+    border-radius: 8px;
+    border: none;
+    font-family: InterSemiBold;
+    color: var(--text-color-button);
+    font-size: 16px;
+    cursor: pointer;
 }
 
 .header__menu {
@@ -113,9 +168,10 @@ body {
 .header__mode {
     position: fixed;
     bottom: 55%;
-    left: 60%;
+    left: 70%;
     transform: translateX(-50%);
     display: none;
+    gap: 10px;
     margin-top: auto;
     padding: 20px;
     width: 100%;
@@ -127,13 +183,14 @@ body {
 }
 
 .mode__title {
+    font-family: InterLight;
     font-size: 14px;
     opacity: 0.8;
 }
 
 .mode__time {
+    font-family: InterSemiBold;
     font-size: 16px;
-    font-weight: bold;
 }
 
 
@@ -141,21 +198,6 @@ body {
     font-size: 20px;
     line-height: 24px;
     text-decoration: none;
-}
-
-.header__button {
-    grid-column: 1 / 3;
-    width: 100%;
-    height: 40px;
-    padding: 6px 32px;
-    margin: 0 auto;
-    background: #FF7700; /* Использовать var */
-    border-radius: 8px;
-    border: none;
-    font-family: InterSemiBold;
-    color: var(--text-color-button);
-    font-size: 16px;
-    cursor: pointer;
 }
 
 .header__btn {
@@ -183,11 +225,6 @@ body.no-scroll {
 }
 
 /*Блок с таймером и акцией*/
-.container {
-    padding: 0 16px;
-    margin: 0 auto;
-}
-
 .promo {
     height: 670px;
     background-image: url('/src/img/main-img-mobile.png');
@@ -196,7 +233,7 @@ body.no-scroll {
 }
 
 .promo__text {
-    position: sticky;
+    position: static;
     top: 0;
     z-index: 2;
     font-family: InterSemiBold;
@@ -277,7 +314,9 @@ body.no-scroll {
     background: var(--text-color-button);
     border-radius: 8px;
     transform: rotate(-2deg);
-    font-family: InterSemiBold;
+    font-family: InterItalic;
+    font-size: 18px;
+    font-weight: 700;
     color: var(--text-color-main);
 }
 
@@ -294,7 +333,9 @@ body.no-scroll {
     background: var(--text-color-button);
     border-radius: 8px;
     transform: rotate(2deg) translateX(-50%);
-    font-family: InterSemiBold;
+    font-family: InterItalic;
+    font-weight: 700;
+    font-size: 18px;
     color: var(--text-color-main);
     z-index: -2;
 }
@@ -311,7 +352,9 @@ body.no-scroll {
     background: #F5CF77;
     border-radius: 32px;
     transform: rotate(4deg) translatey(-50%);    
-    font-family: InterSemiBold;
+    font-family: InterItalic;
+    font-weight: 700;
+    font-size: 18px;
     color: var(--text-color-main);
     z-index: -1;
 }
@@ -373,7 +416,7 @@ left: 0;
 /*Блок с преимуществами и наградами*/
 .advantages {
     position: relative;
-    height: 400px;
+    height: 500px;
 }
  
 .advantages__item {
@@ -385,28 +428,33 @@ left: 0;
     background-color: var(--text-color-button);
     box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.1);
     border-radius: 16px;
+    font-family: InterRegular;
 }
 
 .advantages__item:first-child {
     position: absolute;
-    top: -13%;
+    top: -10%;
     left: 2%;
 }
 
 .advantages__item:nth-child(2) {
     position: absolute;
-    top: 22%;
+    top: 25%;
     left: 2%;
 }
 
  .advantages__item:nth-child(3) {
     position: absolute;
-    top: 57%;
+    top: 60%;
     left: 2%;
 } 
 
 .advantages__img {
     position: relative;
+}
+
+.advantages__text span {
+    font-weight: bold;
 }
 
 .advantages__cup {
@@ -513,19 +561,19 @@ cursor: pointer;
     fill-opacity: 0.15;
 }
 
-.controls {
+.controls, .results__controls {
 font-family: InterRegular;
 font-size: 18px;
 line-height: 22px;
 color: var(--text-color-main);
 }
 
-.controls ul {
+.controls ul, .results__controls ul {
     display: flex;
     list-style: none;
 }
 
-.controls ul li {
+.controls ul li, .results__controls ul li {
     padding: 8px;
 }
 
@@ -677,6 +725,11 @@ line-height: 30px;
 color: #686868;
 }
 
+.promotion__text span {
+    font-family: InterBold;
+    font-style: italic;
+}
+
 .promotion__img {
     margin-top: -40px;
 }
@@ -715,3 +768,90 @@ font-size: 16px;
 color: #222222;
 }
 
+/* Блок с результатами */
+.results {
+    overflow: hidden;
+}
+
+
+.results__title {
+    margin-bottom: 32px;
+font-family: InterBold;
+font-size: 27px;
+text-align: center;
+color: #FF7700;
+}
+
+.results__items {
+    display: flex;
+    gap: 50px;
+}
+
+.results__img {
+    position: relative;
+    height: 917px;
+}
+
+.play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.play:hover path {
+    fill: #FF7700;
+    fill-opacity: 1;
+}
+
+.results__patient {
+    position: absolute;
+    top: 7.5%;
+    left: 4.5%;
+}
+
+.results__player {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 16px 32px;
+position: absolute;
+left: 4%;
+width: 330px;
+bottom: 60px;
+background: #00000099;
+}
+
+.results__svg {
+    display: flex;
+    align-items: center;
+    color: var(--text-color-button);
+}
+
+.results__svg svg {
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.results__svg svg:hover path {
+    fill: #FF7700;
+}
+
+.reviewresults-slider__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.results__prev,  .results__next{
+width: 24px;
+height: 24px;
+border: none;
+cursor: pointer;
+}
+
+.prev svg:hover, .next svg:hover {
+    fill-opacity: 1;
+}

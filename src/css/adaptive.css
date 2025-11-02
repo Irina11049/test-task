@@ -4,6 +4,11 @@
         right: 3%;
     }
 
+    .header__button {
+        width: 343px;
+        margin-left: -77%;
+    }
+
     .header__mode {
         left: 70%;
     }
@@ -21,7 +26,7 @@
     }
 
     .reasons .container {
-        width: 340px;
+        width: 343px;
     }
 
     .reasons__item {
@@ -29,7 +34,7 @@
     }
 
     .reviews .container  {
-        width: 340px; 
+        width: 343px; 
     }
 
     .review-card {
@@ -44,6 +49,11 @@
         width: 365px;
     }
 
+    .header__button {
+        width: 356px;
+        margin-left: -78%;
+    }
+
     .promo {
         background-position-y: 104%;
     }
@@ -53,6 +63,11 @@
 
     .header__menu {
         width: 370px;
+    }
+
+    .header__button {
+        width: 363px;
+        margin-left: -79%;
     }
 
     .promo {
@@ -65,6 +80,11 @@
         width: 375px;
     }
 
+    .header__button {
+        width: 368px;
+        margin-left: -79%;
+    }
+
     .promo {
         background-position-y: 97%;
     }
@@ -74,6 +94,11 @@
 
     .header__menu {
         width: 397px;
+    }
+
+    .header__button {
+        width: 393px;
+        margin-left: -80%;
     }
 
     .header__mode {
@@ -90,12 +115,23 @@
 }
 
 @media screen and (min-width:430px) {
+
+    .header__button {
+        width: 398px;
+        margin-left: -80%;
+    }
+    
     .promo {
         background-position-y: 93%;
     }
 }
 
 @media screen and (min-width:445px) {
+    .header__button {
+        width: 413px;
+        margin-left: -81%;
+    }
+
     .promo {
         background-position-y: 90%;
     }
@@ -109,7 +145,11 @@
     }
 }
 
-@media screen and (min-width:445px) {
+@media screen and (min-width:455px) {
+    .header__button {
+        width: 423px;
+        margin-left: -82%;
+    }
 
     .header__menu {
         width: 415px;
@@ -131,6 +171,11 @@
         width: 440px;
     }
 
+    .header__button {
+        width: 438px;
+        margin-left: -82%;
+    }
+
     .header__mode {
         left: 55%;
     }
@@ -145,13 +190,21 @@
 }
 
 @media screen and (min-width:495px) {
+    .header__button {
+        width: 463px;
+        margin-left: -83%;
+    }
+
     .promo {
         background-position-y: 80%;
     }
 }
 
-@media screen and (min-width:495px) {
-
+@media screen and (min-width:520px) {
+    .header__button {
+        width: 488px;
+        margin-left: -84%;
+    }
     .header__mode {
         left: 60%;
     }
@@ -161,7 +214,7 @@
     }
 
     .reasons .container {
-        width: 460px;
+        width: 488px;
     }
 
     .reasons__item {
@@ -169,7 +222,7 @@
     }
 
     .reviews .container  {
-        width: 460px; 
+        width: 488px; 
     }
 
     .review-card {
@@ -178,6 +231,10 @@
 }
 
 @media screen and (min-width:535px) {
+    .header__button {
+        width: 503px;
+        margin-left: -84%;
+    }
 
     .header__mode {
         left: 65%;
@@ -193,12 +250,16 @@
 }
 
 @media screen and (min-width:560px) {
+    .header__button {
+        width: 528px;
+        margin-left: -85%;
+    }
     .promo {
         background-position-y: 73%;
     }
 
     .reasons .container {
-        width: 520px;
+        width: 528px;
     }
 
     .reasons__item {
@@ -206,7 +267,7 @@
     }
 
     .reviews .container  {
-        width: 520px; 
+        width: 528px; 
     }
 
     .review-card {
@@ -215,6 +276,10 @@
 }
 
 @media screen and (min-width:605px) {
+    .header__button {
+        width: 573px;
+        margin-left: -86%;
+    }
 
     .header__mode {
         left: 72%;
@@ -250,6 +315,11 @@
 }
 
 @media screen and (min-width:625px) {
+    .header__button {
+        width: 593px;
+        margin-left: -86%;
+    }
+
     .promo {
         background-position-y: 71%;
     }
@@ -264,6 +334,10 @@
 }
 
 @media screen and (min-width:650px) {
+    .header__button {
+        width: 618px;
+        margin-left: -87%;
+    }
 
     .header__mode {
         left: 75%;
@@ -275,6 +349,11 @@
 }
 
 @media screen and (min-width:675px) {
+    .header__button {
+        width: 643px;
+        margin-left: -88%;
+    }
+
     .promo {
         background-position-y: 69%;
     }
@@ -304,18 +383,23 @@
 }
 
 @media screen and (min-width:700px) {
-
-    .header {
-        grid-template-columns: 162px 345px 79px;
+    .header .container {
+        grid-template-columns: 162px 345px;
+        grid-template-rows: 40px;
     }
 
     .header__menu {
         height: 450px;
     }
 
+    .header__buttons {
+        display: flex;
+        justify-content: end;
+    }
+
     .header__button {
-        grid-column: 2 / 3;
-        grid-row: 1;
+        width: 198px;
+        margin: 0;
     }
 
     .header__btn {
@@ -413,15 +497,21 @@
 }
 
 @media screen and (min-width:900px) {
-    .header {
-        grid-template-columns: 162px 250px 198px 79px;
+    .header .container {
+        grid-template-columns: 162px 250px 330px;
         grid-template-rows: auto;
         gap: 0;
         align-items: center;
     }
 
     .header__burger, .close {
-        grid-column: 4 / 4;
+        width: 131px;
+        height: 40px;
+    }
+
+    .header__button {
+        padding: 10px 32px;
+        font-size: 14px;
     }
     
     .header__menu {
@@ -433,7 +523,7 @@
         position: static;
         grid-column: 2 ;
         grid-row: 1;
-        display: grid;
+        display: flex;
         grid-template-columns: auto auto;
         align-items: center;
         margin-left: 60px;
@@ -443,10 +533,6 @@
         margin: 0 auto;
     }
 
-    .header__button {
-        grid-column: 3 / 4;
-    }
-
     .promo__alert {
         grid-template-columns: repeat(2, auto);
         align-items: center;
@@ -454,6 +540,10 @@
 
     .promo__timer {
         align-items: center;
+    }
+
+    .promo__content {
+        font-size: 20px;
     }
 
     .promo__footer {
@@ -478,15 +568,11 @@
     }
 
     .reasons .container {
-        width: 100%;
+        width: 868px;
     }
 
     .reasons__title {
         font-size: 30px;
-    }
-
-    .reasons__items {
-        justify-content: center;
     }
 
     .reasons__item {
@@ -499,15 +585,11 @@
     }
 
     .reviews .container {
-        width: 850px;
+        width: 868px;
     }
 
     .review-card {
         flex: 0 0 415px;
-    }
-
-    .review-controls ul li:nth-child(5) {
-        display: none;
     }
 
    .promotion__info {
@@ -525,6 +607,10 @@
        font-size: 21px;
     }
 
+    .promotion__text, .promotion__plus {
+        line-height: 39px;
+    }
+
     .promotion__button {
         margin: 0 auto;
     }
@@ -535,5 +621,856 @@
 }
 
 @media screen and (min-width:1024px) {
+    .promo {
+        background-position-y: 92%;
+    }
+
+    .promo__alert {
+        width: 866px;
+        margin: 0 auto;
+    }
+
+    .promo__dignity,.promo__title, .promo__highlight {
+        font-size: 32px;
+    }
+    .counter__text {
+        text-align: start;
+    }
+
+    .promo__content {
+        font-size: 32px;
+    }
+
+    .promo__dignity {
+        width: 337px;
+        height: 63px;
+    }
+
+    .promo__title {
+        width: 640px;
+        height: 63px;
+        top: 68px;
+    }
+
+    .promo__highlight {
+        width: 225px;
+        height: 63px;
+        top: 50%;
+    }
+
+    .promo__footer {
+        bottom: -102%;
+    }
+
+    .advantages__item:first-child {
+        top: -26%;
+    }
+
+    .advantages__item:nth-child(2)  {
+        left: 7%;
+        top: 6%;
+    }
+
+    .advantages__item:nth-child(3) {
+        top: 30%;
+        left: 49%;
+    }
+
+    .reasons .container {
+        width: 992px;
+    }
+
+    .reasons__item  {
+        flex: 0 0 320px;
+    }
+
+    .reviews .container {
+        width: 992px;
+    }
+
+    .reviews__items {
+        width: 100%;
+    }
+
+    .review-card {
+        flex: 0 0 395px;
+    }
+}
+
+@media screen and (min-width:1034px) {
+    .promo {
+        background-position-y: 100%;
+    }
+    .promo__footer {
+        bottom: -119%;
+        left: 2%;
+    }
+}
+
+@media screen and (min-width:1075px) {
+    .promo {
+        background-position-y: 105%;
+    }
+}
+
+@media screen and (min-width:1100px) {
+    .promo {
+        background-position-y: 108%;
+    }
+
+    .advantages__item:nth-child(2) {
+        left: 12%;
+    }
+
+    .advantages__item:nth-child(3) {
+        left: 51%;
+    }
+
+    .reasons .container {
+        width: 1068px;
+    }
+
+    .reasons__item {
+        flex: 0 0 345px;
+    }
+
+    .reviews .container {
+        width: 1068px;
+    }
+
+    .promotion__title, .promotion__text, .promotion__plus {
+        font-size: 32px;
+    }
+}
+
+@media screen and (min-width:1115px) {
+    .promo {
+        background-position-y: 112%;
+    }
+
+    .promo__footer {
+        bottom: -121%;
+        left: 3%;
+    }
+
+    .advantages__item:nth-child(1) {
+        top: -21%;
+    }
+
+    .advantages__item:nth-child(2) {
+        top: 10%;
+    }
+
+    .reasons .container {
+        width: 1083px;
+    }
+
+    .reviews .container {
+        width: 1083px;
+    }
+}
+
+@media screen and (min-width:1130px) {
+    .promo {
+        background-position-y: 118%;
+    }
+
+    .advantages__item:nth-child(1) {
+        top: -19%;
+    }
+
+    .advantages__item:nth-child(2) {
+        top: 12%;
+    }
+
+    .reasons .container {
+        width: 1098px;
+    }
+
+    .reviews .container {
+        width: 1098px;
+    }
+}
+
+@media screen and (min-width:1150px) {
+    .promo {
+        background-position-y: 122%;
+    }
+
+    .promo__footer {
+        bottom: -130%;
+        left: 5%;
+    }
+
+    .reasons .container {
+        width: 1118px;
+    }
+
+    .reviews .container {
+        width: 1118px;
+    }
+}
+
+@media screen and (min-width:1165px) {
+    .promo {
+        background-position-y: 127%;
+    }
+
+    .advantages__item:nth-child(1) {
+        top: -20%;
+    }
+}
+
+@media screen and (min-width:1185px) {
+    .promo {
+        background-position-y: 130%;
+    }
+}
+
+@media screen and (min-width:1194px) {
+    .promo {
+        background-position-y: 132%;
+    }
+}
+
+@media screen and (min-width:1205px) {
+    .promo {
+        background-position-y: 140%;
+    }
+}
+
+@media screen and (min-width:1230px) {
+    .promo {
+        background-position-y: 150%;
+    }
+    .reasons__item {
+        flex: 0 0 375px;
+    }
+}
+
+@media screen and (min-width:1245px) {
+    .promo {
+        background-position-y: 160%;
+    }
+
+    .reasons .container {
+        width: 1213px;
+    }
+
+    .reviews .container {
+        width: 1213px;
+    }
+}
+
+@media screen and (min-width:1265px) {
+    .promo {
+        background-position-y: 170%;
+    }
+
+    .advantages__item:nth-child(3) {
+        left: 47%;
+    }
+
+    .reasons__item {
+        flex: 0 0 390px;
+    }
+
+    .reasons .container {
+        width: 1233px;
+    }
+
+    .reviews .container {
+        width: 1233px;
+        padding-right: 0;
+    }
+}
+
+@media screen and (min-width:1280px) {
+    .promo {
+        background-position-y: 180%;
+    } 
+}
+
+@media screen and (min-width:1300px) {
+    .header .container {
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: 50px;
+    }
+
+    .header__buttons {
+        grid-column: 4;
+    }
+
+    .header__burger, .close {
+        display: none;
+    }
+
+    .header__menu {
+        position: static;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background: transparent;
+        box-shadow: none;
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .menu {
+        flex-direction: row;
+        margin-top: 0;
+    }
+
+    .menu__item a {
+        font-size: 15px;
+    }
+
+    .header__mode {
+        grid-template-columns: 25px 200px;
+        gap: 8px;
+        grid-column: 3;
+        margin-top: 0;
+        transform: translateX(0);
+        margin-left: 0;
+        padding: 0;
+    }
+
+    .promo {
+        background-position-y: 190%;
+    } 
+
+    .advantages__item:nth-child(2) {
+        left: 14%;
+    }
+
+    .advantages__item:nth-child(3) {
+        left: 47%;
+    }
+
+    .reasons__item {
+        flex: 0 0 400px;
+    }
+
+    .promotion__button {
+        width: 510px;
+        height: 65px;
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-width:1325px) {
+    .promo {
+        background-position-y: 210%;
+    } 
+}
+
+@media screen and (min-width:1340px) {
+    .promo {
+        background-position-y: 225%;
+    } 
+}
+
+@media screen and (min-width:1355px) {
+    .promo {
+        background-position-y: 245%;
+    } 
+
+    .reasons__item {
+        flex: 0 0 420px;
+    }
+
+    .reasons .container {
+        width: 1323px;
+    }
+
+    .reviews .container {
+        width: 1323px;
+    }
+}
+
+@media screen and (min-width:1370px) {
+    .promo {
+        background-position-y: 260%;
+    } 
+}
+
+@media screen and (min-width:1380px) {
+    .promo {
+        background-position-y: 275%;
+    } 
+
+    .advantages__item:nth-child(2) {
+        left: 17%;
+    }
+
+    .advantages__item:nth-child(3) {
+        left: 48%;
+    }
+
+    .reasons .container {
+        width: 1348px;
+    }
+
+    .reviews .container {
+        width: 1348px;
+    }
+}
+
+@media screen and (min-width:1400px) {
+    .promo {
+        background-position-y: 70%;
+        height: 900px;
+    } 
+
+    .advantages {
+        height: 250px;
+    }
+
+    .advantages__item:nth-child(1) {
+        top: -60%;
+    }
+
+    .advantages__item:nth-child(2) {
+        top: -20%;
+    }
+
+    .advantages__item:nth-child(3) {
+        top: 10%;
+    }
+
+    .reasons .container {
+        width: 1368px;
+    }
+
+    .reasons__item {
+        flex: 0 0 440px;
+    }
+
+    .reviews .container {
+        width: 1368px;
+    }
+}
+
+@media screen and (min-width:1440px) {
+    .promo {
+        height: 966px;
+        background-position-y: 75%;
+    }
+
+    .promo__dignity {
+        width: 450px;
+        height: 85px;
+        font-size: 50px;
+    }
+
+    .promo__title {
+        top: 100px;
+        width: 900px;
+        height: 85px;
+        font-size: 50px; 
+    }
+
+    .promo__highlight {
+        top: 69%;
+        right: 33%;
+        width: 315px;
+        height: 85px;
+        font-size: 50px; 
+    }
+
+    .promo__description {
+        width: 395px;
+        font-size: 20px;
+        bottom: -16%;
+        left: 72%;
+    }
+
+    .advantages__item:nth-child(1) {
+        top: -55%;
+    }
+
+    .advantages__item:nth-child(2) {
+        top: -10%;
+    }
+
+    .advantages__item:nth-child(3) {
+        left: 47%;
+    }
+
+    .reasons .container {
+        width: 1408px;
+    }
+
+    .reasons__item {
+        flex: 0 0 456px;
+    }
+
+    .reasons__title {
+        width: 731px;
+        font-size: 42px;
+        margin: 0 auto;
+        margin-bottom: 32px;
+    }
+
+    .reviews .container {
+        width: 1408px;
+    }
+
+    .promotion__btn {
+        font-size: 30px;
+    }
+
+    .promotion__info {
+        justify-content: end;
+    }
+
+    .results__items {
+        flex-wrap: wrap;
+    }
+
+    .results__title {
+        font-size: 42px;
+    }
+
+    .results__img {
+        width: 433px;
+    }
+}
+
+@media screen and (min-width:1470px) {
+    .promo {
+        background-position-y: 80%;
+    }
+
+    .advantages__item:nth-child(1) {
+        top: -50%;
+    }
+}
+
+@media screen and (min-width:1510px) {
+    .promo {
+        background-position-y: 90%;
+    }
+
+    .advantages__item:nth-child(1) {
+        top: -36%;
+    }
+
+    .advantages__item:nth-child(2) {
+        top: 5%;
+    }
     
+    .advantages__item:nth-child(3) {
+        top: 30%;
+        left: 46%;
+    }
+
+    .reasons .container {
+        width: 1440px;
+    }
+
+    .reviews .container {
+        width: 1440px;
+    }
+}
+
+@media screen and (min-width:1580px) {
+    .container {
+        width: 1440px;
+    }
+    .promo {
+        background-position-y: 100%;
+    }
+
+    .advantages {
+        height: 275px;
+    }
+
+    .advantages__item:nth-child(1) {
+        top: -25%;
+    }
+
+    .advantages__item:nth-child(2) {
+        top: 17%;
+        left: 21%;
+    }
+
+    .advantages__item:nth-child(3) {
+        top: 40%;
+        left: 48%;
+    }
+}
+
+@media screen and (min-width:1630px) {
+    .promo {
+        background-position-y: 110%;
+    }
+}
+
+@media screen and (min-width:1665px) {
+    .promo {
+        background-position-y: 120%;
+    }
+}
+
+@media screen and (min-width:1700px) {
+    .promo {
+        background-position-y: 130%;
+    }
+}
+
+@media screen and (min-width:1740px) {
+    .promo {
+        background-position-y: 135%;
+    }
+
+    .promo__highlight {
+        right: 38%;
+    }
+}
+
+@media screen and (min-width:1755px) {
+    .promo {
+        background-position-y: 145%;
+    }
+}
+
+@media screen and (min-width:1775px) {
+    .promo {
+        background-position-y: 155%;
+    }
+
+    .promo__description {
+        bottom: -55%;
+        left: 80%;
+    }
+
+    .promo__footer {
+        bottom: -220%;
+        left: 8%;
+    }
+
+    .advantages__item:nth-child(2) {
+        top: 10%;
+        left: 25%;
+    }
+
+    .advantages__item:nth-child(3) {
+        top: 29%;
+        left: 49%;
+    }
+}
+
+@media screen and (min-width:1800px) {
+    .promo {
+        background-position-y: 165%;
+    }
+}
+
+@media screen and (min-width:1820px) {
+    .promo {
+        background-position-y: 175%;
+    }
+}
+
+@media screen and (min-width:1835px) {
+    .promo {
+        background-position-y: 185%;
+    }
+}
+
+@media screen and (min-width:1850px) {
+    .promo {
+        background-position-y: 195%;
+    }
+}
+
+@media screen and (min-width:1860px) {
+    .promo {
+        background-position-y: 205%;
+    }
+}
+
+@media screen and (min-width:1875px) {
+    .promo {
+        background-position-y: 220%;
+    }
+}
+
+@media screen and (min-width:1885px) {
+    .promo {
+        background-position-y: 235%;
+    }
+}
+
+@media screen and (min-width:1900px) {
+    .promo {
+        background-position-y: 250%;
+    }
+}
+
+@media screen and (min-width:1920px) {
+    .promo {
+        background-position-y: 270%;
+    }
+}
+
+@media screen and (min-width:1930px) {
+    .promo {
+        background-position-y: 295%;
+    }
+}
+
+@media screen and (min-width:1940px) {
+    .promo {
+        background-position-y: 310%;
+    }
+}
+
+@media screen and (min-width:1950px) {
+    .promo {
+        background-position-y: 340%;
+    }
+}
+
+@media screen and (min-width:1960px) {
+    .promo {
+        background-position-y: 360%;
+    }
+}
+
+@media screen and (min-width:1970px) {
+    .promo {
+        height: 950px;
+        background-position-y: 200%;
+    }
+
+    .advantages__item:nth-child(2) {
+        top: 10%;
+        left: 27%;
+    }
+}
+
+@media screen and (min-width:2000px) {
+    .promo {
+        background-position-y: 230%;
+    }
+
+    .advantages__item:nth-child(2) {
+        top: 10%;
+        left: 27%;
+    }
+}
+
+@media screen and (min-width:2015px) {
+    .promo {
+        background-position-y: 250%;
+    }
+}
+
+@media screen and (min-width:2030px) {
+    .promo {
+        background-position-y: 270%;
+    }
+}
+
+@media screen and (min-width:2045px) {
+    .promo {
+        background-position-y: 290%;
+    }
+}
+
+@media screen and (min-width:2055px) {
+    .promo {
+        background-position-y: 310%;
+    }
+}
+
+@media screen and (min-width:2065px) {
+    .promo {
+        background-position-y: 340%;
+    }
+}
+
+@media screen and (min-width:2075px) {
+    .promo {
+        background-position-y: 360%;
+    }
+}
+
+@media screen and (min-width:2085px) {
+    .promo {
+        background-position-y: 390%;
+    }
+}
+
+@media screen and (min-width:2100px) {
+    .promo {
+        background-position-y: 230%;
+        height: 1000px;
+    }
+
+    .promo__description {
+        bottom: -34%;
+        left: 82%;
+    }
+
+    .promo__footer {
+        bottom: -250%;
+        left: 4%;
+    }
+}
+
+@media screen and (min-width:2130px) {
+    .promo {
+        background-position-y: 260%;
+    }
+}
+
+@media screen and (min-width:2155px) {
+    .promo {
+        background-position-y: 280%;
+    }
+}
+
+@media screen and (min-width:2170px) {
+    .promo {
+        background-position-y: 300%;
+    }
+}
+
+@media screen and (min-width:2180px) {
+    .promo {
+        background-position-y: 100%;
+        height: 1200px;
+    }
+}
+
+@media screen and (min-width:2280px) {
+    .promo {
+        background-position-y: 80%;
+        height: 1250px;
+    }
+
+    .promo__description {
+        left: 86%;
+    }
+}
+
+@media screen and (min-width:2380px) {
+    .promo {
+        background-position-y: 90%;
+    }
+}
+
+@media screen and (min-width:2560px) {
+    .promo {
+        background-position-y: 140%;
+    }
+
+    .promo__footer {
+        bottom: -330%;
+        left: -3%;
+    }
 }
