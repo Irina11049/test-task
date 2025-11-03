@@ -1,37 +1,37 @@
 
 @font-face {
     font-family: InterSemiBold;
-    src: url('/src/fonts/Inter-SemiBold.otf');
+    src: url('../fonts/Inter-SemiBold.otf');
 }
 
 @font-face {
     font-family: InterRegular;
-    src: url('/src/fonts/Inter-Regular.otf');
+    src: url('../fonts/Inter-Regular.otf');
 }
 
 @font-face {
     font-family: InterBold;
-    src: url('/src/fonts/Inter-Bold.otf');
+    src: url('../fonts/Inter-Bold.otf');
 }
 
 @font-face {
     font-family: InterItalic;
-    src: url('/src/fonts/Inter-Italic.otf');
+    src: url('../fonts/Inter-Italic.otf');
 }
 
 @font-face {
     font-family: InterLight;
-    src: url('/src/fonts/Inter-Light.otf');
+    src: url('../fonts/Inter-Light.otf');
 }
 
 @font-face {
     font-family: InterExtraBold;
-    src: url('/src/fonts/Inter-ExtraBold.otf');
+    src: url('../fonts/Inter-ExtraBold.otf');
 }
 
 @font-face {
     font-family: InterMedium;
-    src: url('/src/fonts/Inter-Medium.otf');
+    src: url('../fonts/Inter-Medium.otf');
 }
 
 :root {
@@ -240,7 +240,7 @@ body.no-scroll {
 /*Блок с таймером и акцией*/
 .promo {
     height: 670px;
-    background-image: url('/src/img/main-img-mobile.png');
+    background-image: url('../img/main-img-mobile.png');
     background-position-y: 255%;
     background-size: cover;
 }
