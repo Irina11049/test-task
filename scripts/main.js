@@ -32,13 +32,13 @@ document.addEventListener('DOMContentLoaded', function () {
       this.timerElements = {
         days: document.querySelector('.timer__item:nth-child(1) .timer__value'),
         hours: document.querySelector(
-          '.timer__item:nth-child(3) .timer__value'
+          '.timer__item:nth-child(2) .timer__value'
         ),
         minutes: document.querySelector(
-          '.timer__item:nth-child(5) .timer__value'
+          '.timer__item:nth-child(3) .timer__value'
         ),
         seconds: document.querySelector(
-          '.timer__item:nth-child(7) .timer__value'
+          '.timer__item:nth-child(4) .timer__value'
         )
       }
 
