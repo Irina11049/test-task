@@ -1,5 +1,5 @@
-import './css/style.css'
-import './css/adaptive.css'
+import '../css/style.css'
+import '../css/adaptive.css'
 
 document.addEventListener('DOMContentLoaded', function () {
   const burger = document.getElementById('burger')
