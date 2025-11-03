@@ -41,6 +41,18 @@
         flex: 0 0 340px;
     }
 
+    .results__img {
+        width: 343px;
+    }
+
+    .results__patient {
+        width: 310px;
+    }
+
+    .results__player {
+        width: 250px;
+    }
+
 }
 
 @media screen and (min-width:388px) {
@@ -112,6 +124,19 @@
     .reviews__items  {
         width: 400px;
     }
+
+    .results__img {
+        width: 393px;
+    }
+
+    .results__patient {
+        width: 360px;
+    }
+
+    .results__player {
+        width: 297px;
+        bottom: 50px;
+    }
 }
 
 @media screen and (min-width:430px) {
@@ -143,6 +168,18 @@
     .promo__highlight {
     right: 97px;
     }
+
+    .results__img {
+        width: 413px;
+    }
+
+    .results__patient {
+        width: 375px;
+    }
+
+    .results__player {
+        width: 312px;
+    }
 }
 
 @media screen and (min-width:455px) {
@@ -162,6 +199,18 @@
 
     .promo {
         background-position-y: 87%;
+    }
+
+    .results__img {
+        width: 423px;
+    }
+
+    .results__patient {
+        width: 385px;
+    }
+
+    .results__player {
+        width: 322px;
     }
 }
 
@@ -197,6 +246,19 @@
 
     .promo {
         background-position-y: 80%;
+    }
+
+    .results__img {
+        width: 463px;
+    }
+
+    .results__patient {
+        width: 420px;
+    }
+
+    .results__player {
+        width: 360px;
+        bottom: 60px;
     }
 }
 
@@ -247,6 +309,10 @@
     .promo__description {
         padding-bottom: 4px;
     }
+
+    .results__items {
+        gap: 60px;
+    }
 }
 
 @media screen and (min-width:560px) {
@@ -273,6 +339,18 @@
     .review-card {
         flex: 0 0 520px;
     }
+
+    .results__img {
+        width: 528px;
+    }
+
+    .results__patient {
+        width: 480px;
+    }
+
+    .results__player {
+        width: 420px;
+    }    
 }
 
 @media screen and (min-width:605px) {
@@ -330,6 +408,19 @@
 
     .promo__footer {
     bottom: -31%;
+    }
+
+    .results__img {
+        width: 593px;
+    }
+
+    .results__patient {
+        width: 540px;
+    }
+
+    .results__player {
+        width: 480px;
+        bottom: 60px;
     }
 }
 
@@ -695,6 +786,10 @@
     .review-card {
         flex: 0 0 395px;
     }
+
+    .results__title {
+        font-size: 32px;
+    }
 }
 
 @media screen and (min-width:1034px) {
@@ -957,6 +1052,15 @@
         height: 65px;
         font-size: 30px;
     }
+
+    .results__items {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .results-slider__btn {
+        display: none;
+    }
 }
 
 @media screen and (min-width:1325px) {
@@ -1082,8 +1186,13 @@
     .promo__description {
         width: 395px;
         font-size: 20px;
-        bottom: -16%;
+        bottom: -34%;
         left: 72%;
+    }
+
+    .promo__footer {
+        bottom: -203%;
+        left: 10%;
     }
 
     .advantages__item:nth-child(1) {
@@ -1135,6 +1244,27 @@
 
     .results__img {
         width: 433px;
+    }
+
+    .results__items{
+        justify-content: left;
+        gap: 50px;
+    }
+
+    .results__card {
+        width: 433px;
+    }
+
+    .results__img {
+        width: 433px;
+    }
+
+    .results__patient {
+        width: 395px;
+    }
+
+    .results__player {
+        width: 335px;
     }
 }
 
@@ -1466,7 +1596,11 @@
 
 @media screen and (min-width:2560px) {
     .promo {
-        background-position-y: 140%;
+        background-position-y: 160%;
+    }
+
+    .promo__highlight {
+        right: 35%;
     }
 
     .promo__footer {

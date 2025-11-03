@@ -168,7 +168,7 @@ body {
 .header__mode {
     position: fixed;
     bottom: 55%;
-    left: 70%;
+    left: 60%;
     transform: translateX(-50%);
     display: none;
     gap: 10px;
@@ -771,8 +771,12 @@ color: #222222;
 /* Блок с результатами */
 .results {
     overflow: hidden;
+    margin-bottom: 30px;
 }
 
+.results .container {
+    margin: 0 auto;
+}
 
 .results__title {
     margin-bottom: 32px;
@@ -785,11 +789,16 @@ color: #FF7700;
 .results__items {
     display: flex;
     gap: 50px;
+    width: 100%;
 }
 
 .results__img {
     position: relative;
-    height: 917px;
+    width: 288px;
+}
+
+.results__phone {
+    width: 100%;
 }
 
 .play {
@@ -809,6 +818,7 @@ color: #FF7700;
     position: absolute;
     top: 7.5%;
     left: 4.5%;
+    width: 260px;
 }
 
 .results__player {
@@ -818,8 +828,8 @@ align-items: center;
 padding: 16px 32px;
 position: absolute;
 left: 4%;
-width: 330px;
-bottom: 60px;
+width: 200px;
+bottom: 40px;
 background: #00000099;
 }
 
@@ -838,11 +848,11 @@ background: #00000099;
     fill: #FF7700;
 }
 
-.reviewresults-slider__btn {
+.results-slider__btn {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .results__prev,  .results__next{

@@ -28,6 +28,7 @@ document.addEventListener('DOMContentLoaded', function () {
     body.classList.remove('no-scroll')
   })
 
+  //Таймер
   class CountdownTimer {
     constructor (endDate) {
       this.endDate = new Date(endDate).getTime()
