@@ -26,40 +26,31 @@ document.addEventListener('DOMContentLoaded', function () {
   })
 
   //Таймер
-  class CountdownTimer {
-    constructor (endDate) {
-      this.endDate = new Date(endDate).getTime()
-      this.timerElements = {
-        days: document.querySelector('.timer__item:nth-child(1) .timer__value'),
-        hours: document.querySelector(
-          '.timer__item:nth-child(2) .timer__value'
-        ),
-        minutes: document.querySelector(
-          '.timer__item:nth-child(3) .timer__value'
-        ),
-        seconds: document.querySelector(
-          '.timer__item:nth-child(4) .timer__value'
-        )
-      }
+  function initTimer () {
+    // Находим элементы более надежным способом
+    const timerValues = document.querySelectorAll('.timer__value')
 
-      this.start()
+    if (timerValues.length !== 4) {
+      console.log('Элементы таймера не найдены')
+      return
     }
 
-    start () {
-      this.updateTimer()
-      this.interval = setInterval(() => this.updateTimer(), 1000)
-    }
+    const [daysEl, hoursEl, minutesEl, secondsEl] = timerValues
 
-    updateTimer () {
+    // Устанавливаем дату окончания (7 дней от текущей даты)
+    const endDate = new Date()
+    endDate.setDate(endDate.getDate() + 7)
+    const endTime = endDate.getTime()
+
+    function updateTimer () {
       const now = new Date().getTime()
-      const distance = this.endDate - now
+      const distance = endTime - now
 
       if (distance < 0) {
-        clearInterval(this.interval)
-        this.timerElements.days.textContent = '0'
-        this.timerElements.hours.textContent = '00'
-        this.timerElements.minutes.textContent = '00'
-        this.timerElements.seconds.textContent = '00'
+        daysEl.textContent = '0'
+        hoursEl.textContent = '00'
+        minutesEl.textContent = '00'
+        secondsEl.textContent = '00'
         return
       }
 
@@ -70,21 +61,21 @@ document.addEventListener('DOMContentLoaded', function () {
       const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60))
       const seconds = Math.floor((distance % (1000 * 60)) / 1000)
 
-      this.timerElements.days.textContent = days
-      this.timerElements.hours.textContent = hours.toString().padStart(2, '0')
-      this.timerElements.minutes.textContent = minutes
-        .toString()
-        .padStart(2, '0')
-      this.timerElements.seconds.textContent = seconds
-        .toString()
-        .padStart(2, '0')
+      daysEl.textContent = days
+      hoursEl.textContent = hours.toString().padStart(2, '0')
+      minutesEl.textContent = minutes.toString().padStart(2, '0')
+      secondsEl.textContent = seconds.toString().padStart(2, '0')
     }
-  }
-  const endDate = new Date()
-  endDate.setDate(endDate.getDate() + 7)
-  new CountdownTimer(endDate)
 
-    //Слайдер для блока с причинами посещения
+    // Запускаем таймер
+    updateTimer()
+    setInterval(updateTimer, 1000)
+  }
+
+  // Запускаем таймер
+  initTimer()
+
+  //Слайдер для блока с причинами посещения
   const slides = document.querySelector('.reasons__items')
   const slideCount = document.querySelectorAll('.reasons__item').length
   const prevBtn = document.querySelector('.prev')
@@ -142,7 +133,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Слайдер для результатов
   const slidesResults = document.querySelector('.results__items')
-  const slideCountResults= document.querySelectorAll('.results__card').length
+  const slideCountResults = document.querySelectorAll('.results__card').length
   const prevBtnResults = document.querySelector('.results__prev')
   const nextBtnResults = document.querySelector('.results__next')
 
